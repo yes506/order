@@ -9,3 +9,4 @@ class Order(models.Model):
     order_date = models.DateTimeField('date ordered', auto_now_add=True)
     address = models.CharField(max_length=40)
     deliver_finish = models.BooleanField(default=0)
+    price = models.IntegerField(default=0)
